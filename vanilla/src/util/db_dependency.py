@@ -3,6 +3,6 @@ from sqlmodel import Session
 
 # Dependency for SQL DB
 def get_db():
-    if settings.DB_TYPE in ["postgres", "mysql", "mssql"]:
+    if settings.DATABASE_CLIENT in ["postgres", "mysql", "mssql", "sqlite"]:
         with Session(engine) as session:
             yield session
