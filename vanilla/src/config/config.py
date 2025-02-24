@@ -4,8 +4,8 @@ from urllib.parse import quote
 import os
 
 class Settings(BaseSettings):
-    APP_NAME: str | None = None
-    VERSION: str | None = None
+    APP_NAME: str | None = "MyApp"
+    VERSION: str | None = "1"
     API_V1_STR: str = "/api/v1"
     
 # Database Vars
